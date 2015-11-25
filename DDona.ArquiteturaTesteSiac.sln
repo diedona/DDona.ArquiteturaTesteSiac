@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.ArquiteturaTesteSiac.Stuff", "DDona.ArquiteturaTesteSiac.Stuff\DDona.ArquiteturaTesteSiac.Stuff.csproj", "{8EC1ED42-4614-4E3B-9752-F33AD1F977B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.ArquiteturaTesteSiac.Infra", "DDona.ArquiteturaTesteSiac.Infra\DDona.ArquiteturaTesteSiac.Infra.csproj", "{6D5F1ED2-FD05-4AE3-B4F1-C7A00B24C0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.ArquiteturaTesteSiac.SqlBuilders", "DDona.ArquiteturaTesteSiac.SqlBuilders\DDona.ArquiteturaTesteSiac.SqlBuilders.csproj", "{7562BF99-83E5-4FE3-8530-AF68855C5466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.ArquiteturaTesteSiac.Business", "DDona.ArquiteturaTesteSiac.Business\DDona.ArquiteturaTesteSiac.Business.csproj", "{14D1FB60-28F2-4566-A0D7-529D182CEE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.ArquiteturaTesteSiac.DataTransferObject", "DDona.ArquiteturaTesteSiac.DataObject\DDona.ArquiteturaTesteSiac.DataTransferObject.csproj", "{E6ED5BD5-5EA2-4B59-8B85-9E73C9F3B4EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDona.ArquiteturaTesteSiac.ConsoleApp", "DDona.ArquiteturaTesteSiac.ConsoleApp\DDona.ArquiteturaTesteSiac.ConsoleApp.csproj", "{AEB407E8-1671-4DFE-A84B-A45ABA6DC32D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EC1ED42-4614-4E3B-9752-F33AD1F977B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC1ED42-4614-4E3B-9752-F33AD1F977B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC1ED42-4614-4E3B-9752-F33AD1F977B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC1ED42-4614-4E3B-9752-F33AD1F977B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5F1ED2-FD05-4AE3-B4F1-C7A00B24C0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5F1ED2-FD05-4AE3-B4F1-C7A00B24C0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5F1ED2-FD05-4AE3-B4F1-C7A00B24C0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5F1ED2-FD05-4AE3-B4F1-C7A00B24C0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7562BF99-83E5-4FE3-8530-AF68855C5466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7562BF99-83E5-4FE3-8530-AF68855C5466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7562BF99-83E5-4FE3-8530-AF68855C5466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7562BF99-83E5-4FE3-8530-AF68855C5466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D1FB60-28F2-4566-A0D7-529D182CEE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D1FB60-28F2-4566-A0D7-529D182CEE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D1FB60-28F2-4566-A0D7-529D182CEE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D1FB60-28F2-4566-A0D7-529D182CEE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6ED5BD5-5EA2-4B59-8B85-9E73C9F3B4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6ED5BD5-5EA2-4B59-8B85-9E73C9F3B4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6ED5BD5-5EA2-4B59-8B85-9E73C9F3B4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6ED5BD5-5EA2-4B59-8B85-9E73C9F3B4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB407E8-1671-4DFE-A84B-A45ABA6DC32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB407E8-1671-4DFE-A84B-A45ABA6DC32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB407E8-1671-4DFE-A84B-A45ABA6DC32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB407E8-1671-4DFE-A84B-A45ABA6DC32D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
