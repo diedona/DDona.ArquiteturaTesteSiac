@@ -27,11 +27,11 @@ namespace DDona.ArquiteturaTesteSiac.ReportAccess
             }
         }
 
-        public List<T> Get<T>(string SQL) where T : class
+        public List<T> Get<T>(string SQL, object Param = null) where T : class
         {
             using(IDbConnection db = new SqlConnection(this.ConnectionString))
             {
-                return db.Query<T>(SQL).ToList();
+                return db.Query<T>(SQL, Param).ToList();
             }
         }
 

@@ -58,5 +58,22 @@ namespace DDona.ArquiteturaTesteSiac.Business
                 throw;
             }
         }
+
+        public List<VendaQuantidadeItensDTO> GetVendaQuantidadeItensDTO (int? Min = null, int? Max = null)
+        {
+            VendaSQLBuilder SqlBuilder = new VendaSQLBuilder();
+            string Sql = SqlBuilder.GetVendasQuantidadeItens(Min.HasValue, Max.HasValue);
+
+            DataSystemAccess ds = new DataSystemAccess();
+            try
+            {
+                return ds.Get<VendaQuantidadeItensDTO>(Sql, 
+                    new { Minimo = Min.GetValueOrDefault(), Maximo = Max.GetValueOrDefault() });
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

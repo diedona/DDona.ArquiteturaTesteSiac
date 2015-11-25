@@ -41,6 +41,12 @@ namespace DDona.ArquiteturaTesteSiac.SqlBuilders.Venda
 
                 sbHaving.AppendLine(" COUNT(IV.Codigo) < @Maximo ");
             } 
+
+            if(sbHaving.Length > 0)
+            {
+                sbHaving.Insert(0, " HAVING ");
+            }
+
             #endregion
 
             //WHERE NÃO IMPLEMENTADO AINDA

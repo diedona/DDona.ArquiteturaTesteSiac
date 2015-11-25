@@ -8,10 +8,10 @@ namespace DDona.ArquiteturaTesteSiac.ReportAccess
 {
     public class DataSystemAccess
     {
-        public List<T> Get<T>(string SQL) where T : class
+        public List<T> Get<T>(string SQL, object Param = null) where T : class
         {
             DapperWrapper Dapper = new DapperWrapper();
-            return Dapper.Get<T>(SQL);
+            return Dapper.Get<T>(SQL, Param);
         }
     }
 }
