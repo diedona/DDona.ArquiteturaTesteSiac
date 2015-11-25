@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dapper;
 using System.Data;
 using System.Data.SqlClient;
 using DDona.ArquiteturaTesteSiac.SqlBuilders.Venda;
+using DDona.ArquiteturaTesteSiac.ReportAccess;
 
 namespace DDona.ArquiteturaTesteSiac.Business
 {
@@ -25,7 +25,7 @@ namespace DDona.ArquiteturaTesteSiac.Business
         /// <returns></returns>
         public List<Venda> GetAll()
         {
-            using(SiacContext db = new SiacContext())
+            using (SiacContext db = new SiacContext())
             {
                 try
                 {
@@ -45,12 +45,17 @@ namespace DDona.ArquiteturaTesteSiac.Business
         /// <returns></returns>
         public List<VendaComValorTotalDTO> GetVendaComValorTotal()
         {
-            string connection = @"Server=.\SQLExpress;Database=Teste;User Id=sa;Password=sqlexpress;MultipleActiveResultSets=true;";
-            VendaSQLBuilder vendaSQLBuilder = new VendaSQLBuilder();
+            VendaSQLBuilder SqlBuilder = new VendaSQLBuilder();
+            string Sql = SqlBuilder.GetVendasComValorTotalCalculado();
 
-            using(IDbConnection db = new SqlConnection(connection))
+            DataSystemAccess ds = new DataSystemAccess();
+            try
             {
-                return db.Query<VendaComValorTotalDTO>(vendaSQLBuilder.GetVendasComValorTotalCalculado()).ToList();
+                return ds.Get<VendaComValorTotalDTO>(Sql);
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }
